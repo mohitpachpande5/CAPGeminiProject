@@ -1,0 +1,31 @@
+/* Animated Gradient Background */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Hover effect for cards */
+.card.hover-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for buttons */
+.hover-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth Gradient Background Animation */
+body {
+  background: linear-gradient(45deg, #ca7ad6, #7bdb63, #f0e76c, #f573db, #ff7593);
+  background-size: 400% 400%;
+  animation: gradientAnimation 20s ease infinite;
+}

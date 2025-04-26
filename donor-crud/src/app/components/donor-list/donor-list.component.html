@@ -1,0 +1,26 @@
+<div class="container mt-4">
+  <h1 class="mb-4 text-center fw-bold">Donor List</h1>
+  <div class="d-flex justify-content-center mb-4">
+    <a routerLink="/create" class="btn btn-success px-4 py-2 fw-bold hover-button">+ Add Donor</a>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 mb-4" *ngFor="let donor of donors">
+      <div class="card shadow-lg h-100 hover-card"
+           style="background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); color: white; border: none;">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">{{ donor.firstName }} {{ donor.lastName }}</h5>
+          <p class="card-text mb-2"><strong>ID:</strong> {{ donor.donId }}</p>
+          <p class="card-text mb-2"><strong>Email:</strong> {{ donor.email }}</p>
+          <p class="card-text mb-4"><strong>Mobile:</strong> {{ donor.mobileNumber || 'N/A' }}</p>
+
+          <div class="d-flex justify-content-between">
+            <a [routerLink]="['/details', donor.donId]" class="btn btn-light btn-sm hover-button">View</a>
+            <a [routerLink]="['/edit', donor.donId]" class="btn btn-warning btn-sm hover-button">Edit</a>
+            <button (click)="deleteDonor(donor.donId!)" class="btn btn-danger btn-sm hover-button">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

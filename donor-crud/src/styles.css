@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+  body {
+    background: linear-gradient(135deg, #ca7ad6, #7bdb63, #f0e76c, #f573db, #ff7593);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    min-height: 100vh;
+  }
+
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+
+  h1 {
+    font-weight: bold;
+    color: #0056d2;
+  }

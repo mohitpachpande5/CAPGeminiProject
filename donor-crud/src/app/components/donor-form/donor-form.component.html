@@ -1,0 +1,76 @@
+<div class="min-vh-100 d-flex align-items-center justify-content-center"
+     style="background: linear-gradient(45deg, #ca7ad6, #7bdb63, #f0e76c, #f573db, #ff7593); background-size: 400% 400%; animation: gradientAnimation 20s ease infinite;">
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <div class="card shadow-lg p-4" style="border-radius: 1rem; transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden;"
+             class="hover-card">
+          <h1 class="text-center mb-4 fw-bold">{{ isEditMode ? 'Edit Donor' : 'Add Donor' }}</h1>
+
+          <form [formGroup]="donorForm" (ngSubmit)="onSubmit()" class="row g-3">
+            <div class="col-md-6">
+              <label for="firstName" class="form-label">First Name</label>
+              <input id="firstName" formControlName="firstName" type="text"
+                     class="form-control"
+                     [ngClass]="{'is-invalid': donorForm.get('firstName')?.invalid && donorForm.get('firstName')?.touched}" />
+              <div *ngIf="donorForm.get('firstName')?.invalid && donorForm.get('firstName')?.touched" class="invalid-feedback">
+                First Name is required
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input id="lastName" formControlName="lastName" type="text"
+                     class="form-control"
+                     [ngClass]="{'is-invalid': donorForm.get('lastName')?.invalid && donorForm.get('lastName')?.touched}" />
+              <div *ngIf="donorForm.get('lastName')?.invalid && donorForm.get('lastName')?.touched" class="invalid-feedback">
+                Last Name is required
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" formControlName="email" type="email"
+                     class="form-control"
+                     [ngClass]="{'is-invalid': donorForm.get('email')?.invalid && donorForm.get('email')?.touched}" />
+              <div *ngIf="donorForm.get('email')?.invalid && donorForm.get('email')?.touched" class="invalid-feedback">
+                Valid email is required
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="mobileNumber" class="form-label">Mobile Number</label>
+              <input id="mobileNumber" formControlName="mobileNumber" type="text" class="form-control" />
+            </div>
+
+            <div class="col-md-6">
+              <label for="event" class="form-label">Event</label>
+              <input id="event" formControlName="event" type="text"
+                     class="form-control"
+                     [ngClass]="{'is-invalid': donorForm.get('event')?.invalid && donorForm.get('event')?.touched}" />
+              <div *ngIf="donorForm.get('event')?.invalid && donorForm.get('event')?.touched" class="invalid-feedback">
+                Event is required
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="amount" class="form-label">Amount</label>
+              <input id="amount" formControlName="amount" type="number" class="form-control" />
+            </div>
+
+            <div class="col-12 text-center mt-3">
+              <button type="submit" [disabled]="donorForm.invalid" class="btn btn-primary me-2 px-4 hover-button">
+                {{ isEditMode ? 'Update' : 'Create' }}
+              </button>
+              <a routerLink="/" class="btn btn-secondary px-4 hover-button">Cancel</a>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
