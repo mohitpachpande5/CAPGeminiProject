@@ -1,51 +1,48 @@
 ---
 
-# Donor CRUD Application
+# 🎁 Donor CRUD Application
 
-## Overview
+## 📋 Overview
 
-This project is a **Donor Management CRUD Application** developed as part of the CAPGemini Internship.  
-It is a full-stack web application built using **Angular** (frontend) and **Spring Boot** (backend), with **MySQL** as the database.
-
-Users can **create**, **view**, **edit**, and **delete** donor information through a clean, responsive, and dynamic UI.
+Welcome to the **Donor Management CRUD Application**!  
+Built with 💻 **Angular**, ☕ **Spring Boot**, and 🛢️ **MySQL**, this project helps manage donors with a modern and dynamic UI.
 
 ---
 
-## Features
+## 🚀 Features
 
-- Add new donors with their information
-- Edit existing donor details
-- View detailed donor information
-- Delete donors
-- Animated gradient backgrounds and modern UI
-- Smooth user experience with real-time updates
-
----
-
-## Technologies Used
-
-- **Frontend**: Angular 16, Bootstrap 5
-- **Backend**: Spring Boot (Java)
-- **Database**: MySQL
-- **Styling**: Bootstrap 5 + Custom CSS
+- ➕ Add new donors
+- 📝 Edit existing donor details
+- 👀 View detailed donor info
+- ❌ Delete donors with confirmation
+- 🎨 Beautiful animated gradient background
+- ⚡ Instant updates without page reloads
 
 ---
 
-## Prerequisites
+## 🛠️ Technologies Used
 
-Before running the project, ensure you have:
-
-- **Node.js** (v14 or above)
-- **Angular CLI** (v12 or above)
-- **Java JDK** (v11 or above)
-- **Spring Boot** (v2.7 or above)
-- **MySQL** (v8.0 or above)
+| Frontend | Backend | Database | Styling |
+|:--------:|:-------:|:--------:|:-------:|
+| Angular 16 | Spring Boot | MySQL | Bootstrap 5 |
 
 ---
 
-## Setup Instructions
+## 🧰 Prerequisites
 
-### Backend (Spring Boot)
+Before you start, make sure you have:
+
+- 🟢 Node.js (v14 or above)
+- 🅰️ Angular CLI (v12 or above)
+- ☕ Java JDK (v11 or above)
+- 🌱 Spring Boot (v2.7 or above)
+- 🛢️ MySQL (v8.0 or above)
+
+---
+
+## 🏗️ Setup Instructions
+
+### 📦 Backend (Spring Boot)
 
 1. Clone the repository:
 
@@ -59,7 +56,7 @@ Before running the project, ensure you have:
    cd CAPGeminiProject/backend
    ```
 
-3. Set up your database configuration inside `application.properties`.
+3. Update your MySQL database settings in `application.properties`.
 
 4. Run the Spring Boot application:
 
@@ -67,99 +64,98 @@ Before running the project, ensure you have:
    mvn spring-boot:run
    ```
 
-The backend server will start on:  
-`http://localhost:8080`
+✅ Backend runs at: `http://localhost:8080`
 
 ---
 
-### Frontend (Angular)
+### 🎯 Frontend (Angular)
 
-1. Navigate to the frontend project folder:
+1. Navigate to the frontend folder:
 
    ```bash
    cd CAPGeminiProject/frontend
    ```
 
-2. Install project dependencies:
+2. Install dependencies:
 
    ```bash
    npm install
    ```
 
-3. Start the Angular development server:
+3. Run the Angular dev server:
 
    ```bash
    ng serve
    ```
 
-The frontend will be available at:  
-`http://localhost:4200`
+✅ Frontend runs at: `http://localhost:4200`
 
 ---
 
-## Outputs
+## ✨ Outputs
 
-### Home Page
-
-> Displays a list of all donors with options to view, edit, or delete.
+### 🏡 Home Page
+_Displays a list of all donors with options to view, edit, or delete._
 
 ![Home Page](https://github.com/user-attachments/assets/8946e4ec-7806-4b4d-862d-4ee8f54d0c03)
 
 ---
 
-### Add Donor
-
-> Allows the user to add a new donor's details.
+### ➕ Add Donor
+_Fill the form to add a new donor._
 
 ![Add Donor Form](https://github.com/user-attachments/assets/bd72fdf4-8909-4e33-8727-f67bc7ae361b)
 
-> After successfully adding a donor, details are displayed.
+📋 **After adding a donor:**
 
 ![Donor Added Details](https://github.com/user-attachments/assets/37ee4ae5-3e79-4824-aafc-e06cd68fc7be)
 
 ---
 
-### Edit Donor
-
-> Edit the information of an existing donor.
+### ✏️ Edit Donor
+_Modify details of an existing donor._
 
 ![Edit Donor Form](https://github.com/user-attachments/assets/72d08b89-b95e-4dfd-b9e3-b1ff7f017430)
 
 ---
 
-### Delete Donor
-
-> Confirm donor deletion from the list.
+### 🗑️ Delete Donor
+_Confirm and delete a donor._
 
 ![Before Deleting Donor](https://github.com/user-attachments/assets/fcbf7763-52bf-4d95-9687-2e94cdae888f)
 
-> After successful deletion, the donor is removed from the list.
+🧹 **After deletion:**
 
 ![After Deleting Donor](https://github.com/user-attachments/assets/5f626971-5f4a-423d-a92a-81f3cf370af3)
 
 ---
 
-## API Endpoints
+## 🔗 API Endpoints
 
 | Method | Endpoint | Description |
 |:------:|:--------:|:-----------:|
 | GET    | `/donors` | Fetch all donors |
 | GET    | `/donors/{id}` | Fetch donor by ID |
 | POST   | `/donors` | Add a new donor |
-| PUT    | `/donors/{id}` | Update existing donor |
+| PUT    | `/donors/{id}` | Update donor details |
 | DELETE | `/donors/{id}` | Delete donor |
 
 ---
 
-## License
+## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## Author
+## 👤 Author
 
 **Mohit Pachpande**  
-[GitHub Profile](https://github.com/mohitpachpande5)
+🔗 [GitHub Profile](https://github.com/mohitpachpande5)
 
 ---
+
+# ✨ Thank you for visiting! ✨
+
+---
+
